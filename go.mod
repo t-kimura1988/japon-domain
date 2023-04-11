@@ -1,4 +1,4 @@
-module github.com/t-kimura1988/japon-domain
+module github.com/t-kimura1988/japon-domain/src/domain
 
 go 1.20
 
