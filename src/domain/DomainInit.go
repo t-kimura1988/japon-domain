@@ -5,10 +5,11 @@ import (
 	"gorm.io/gorm"
 	"log"
 )
+
 var DB *gorm.DB
 var dbErr error
 
-func init() {
+func Init() {
 	dns := ""
 	DB, dbErr = gorm.Open(postgres.Open(dns), &gorm.Config{})
 	if dbErr != nil {
